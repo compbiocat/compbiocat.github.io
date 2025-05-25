@@ -1,38 +1,96 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #fff;
+  padding: 0;
+  background: #ffffff;
   color: #333;
 }
 header {
-  background: #002244;
+  background: #003366;
   color: white;
   padding: 1em;
   text-align: center;
 }
+header .site-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1em;
+  list-style: none;
   padding: 0;
+  margin: 1em 0 0;
 }
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
-.icons {
+main {
+  padding: 2em;
+}
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+  background: #eee;
+  margin-top: 2em;
+}
+.cards {
   display: flex;
   justify-content: center;
   gap: 2em;
-  margin: 2em;
+  margin-top: 2em;
 }
-.icons div {
+.card {
+  text-align: center;
+  max-width: 160px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+}
+.hero {
   text-align: center;
 }
-footer {
-  background: #eee;
-  padding: 1em;
+.hero-img {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 1em;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.member {
+  width: 200px;
   text-align: center;
-  font-size: 0.9em;
+}
+.member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.illustration {
+  display: block;
+  margin: 2em auto;
+  max-width: 80%;
+}
+#pub-list {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+#pub-list li {
+  margin-bottom: 1em;
 }
