@@ -67,12 +67,23 @@ footer {
 }
 .team {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
   flex-wrap: wrap;
-  gap: 2em;
   justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+.row.pis .member {
+  width: 240px;
+}
+.row.phds .member {
+  width: 200px;
 }
 .member {
-  width: 200px;
   text-align: center;
 }
 .member img {
